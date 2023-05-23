@@ -10,7 +10,7 @@ const Blogs = () => {
 
       {blogs.map(({ id, blogDate, blogImage, blogTitle,a }) => {
         return (
-          <div className="blogs_container"  >
+          <div className="blogs_container"  key={id}>
             <div className="blog">
               <img src={blogImage} alt="" className="blog_image" />
               <div className="text_area">
